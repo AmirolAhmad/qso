@@ -22,4 +22,7 @@ class Users::SessionsController < Devise::SessionsController
   # def configure_sign_in_params
   #   devise_parameter_sanitizer.for(:sign_in) << :attribute
   # end
+  def after_sign_in_path_for(resource_or_scope)
+    dashboard_path
+  end
 end
