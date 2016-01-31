@@ -3,7 +3,7 @@
 <head>
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
   <meta charset='UTF-8'>
-  <title>QSO</title>
+  <title><%= (title = yield :title).blank? ? "QSO HAM Radio" : title %></title>
   <meta content='' name='keywords'>
   <meta content=''>
   <meta content='' name='author'>
@@ -11,6 +11,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= yield :meta_tags %>
 </head>
 <body class="<%= body_class %>">
   <%= render 'alert' %>

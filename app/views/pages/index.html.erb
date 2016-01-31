@@ -1,3 +1,20 @@
+<% content_for :title do %>
+  QSO HAM Radio
+<% end %>
+
+<% content_for :meta_tags do %>
+  <%= render :partial => 'application/meta_tags',
+             :locals => {
+               :type => "website",
+               :title => "QSO HAM Radio",
+               :url => request.url,
+               :description => "",
+               :canonical => request.url,
+               :og_title => "QSO HAM Radio",
+               :og_description => ""
+            } %>
+<% end %>
+
 <h1>Pages#index</h1>
 <p><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Find me in app/views/pages/index.html.erb</p>
 
