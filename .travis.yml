@@ -10,4 +10,4 @@ services:
  - postgresql
 addons:
  code_climate:
-  repo_token: 
+  repo_token: fac45d672697d4f434f3d6c6444a3e4b4dbe4f3b697b680e53a87355265a5544
