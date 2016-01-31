@@ -1,0 +1,17 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.btn-logout {
+  color: #777;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-logout:hover,
+.btn-logout:focus,
+.btn-logout:active {
+  color: #999;
+}
