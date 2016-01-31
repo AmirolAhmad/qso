@@ -1,0 +1,209 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/amirol/Documents/Projects/qso/config/environment.rb": [
+        null,
+        1,
+        null,
+        null,
+        1
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/application.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/boot.rb": [
+        1,
+        null,
+        1
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/initializers/config.rb": [
+        1,
+        0,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/environments/test.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/initializers/assets.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/initializers/backtrace_silencers.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/initializers/cookies_serializer.rb": [
+        null,
+        null,
+        1
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/initializers/session_store.rb": [
+        null,
+        null,
+        1
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/initializers/wrap_parameters.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/config/routes.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/app/helpers/pages_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/app/controllers/pages_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/amirol/Documents/Projects/qso/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1454230463
+  }
+}
