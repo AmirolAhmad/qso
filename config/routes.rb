@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'pages#index'
+  
   devise_for :users
   devise_scope :user do
     delete 'sign_out', :to => 'devise/sessions#destroy'
@@ -6,5 +8,6 @@ Rails.application.routes.draw do
     get '/register' => 'devise/registrations#new'
     get '/settings' => 'devise/registrations#edit'
   end
-  root 'pages#index'
+
+  get "/dashboard" => 'dashboards#index'
 end
