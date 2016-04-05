@@ -14,9 +14,11 @@
   <%= yield :meta_tags %>
 </head>
 <body class="<%= body_class %>">
-  <%= render 'alert' %>
-  <%= render 'header' %>
-  <%= yield %>
-  <%= render 'footer' %>
+  <div class="container">
+    <%= render 'alert' %>
+    <%= render 'header' %>
+    <%= yield %>
+    <%= render 'footer' %>
+  </div>
 </body>
 </html>

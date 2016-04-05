@@ -1,7 +1,25 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
       <%= link_to "QSO HAM Logbook", root_path, class: "navbar-brand" %>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Dashboard", dashboard_path %></li>
+        <li><%= link_to "Log List", logs_path %></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown user-details">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Hello, <%= current_user.callsign.upcase %> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-metros">
+            <li><%= link_to "Account settings", settings_path %></li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to "Sign out", destroy_user_session_path, method: "delete" %></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

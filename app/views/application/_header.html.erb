@@ -1,26 +1,21 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to "Brand", root_path, class: "navbar-brand" %>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <div class="navbar-right">
-        <% if user_signed_in? %>
-          <%= link_to "Go to dashboard", dashboard_path, class: 'btn btn-link navbar-btn' %>
-          <%= link_to destroy_user_session_path, method: "delete", class: 'btn btn-logout navbar-btn' do %>
+<div class="header clearfix">
+  <nav>
+    <ul class="nav nav-pills pull-right">
+      <li role="presentation"><a href="#">About</a><li role="presentation">
+      <li role="presentation"><a href="#">Contact</a></li>
+      <% if user_signed_in? %>
+        <li role="presentation">
+          <%= link_to "Go to dashboard", dashboard_path, class: 'btn btn-link' %>
+        </li>
+        <li role="presentation">
+          <%= link_to destroy_user_session_path, method: "delete", class: 'btn btn-logout' do %>
             <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
           <% end %>
-        <% else %>
-          <%= link_to "Login", login_path, class: 'btn btn-default btn-sm navbar-btn' %>
-          <%= link_to "New Account", register_path, class: 'btn btn-primary btn-sm navbar-btn' %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</nav>
+        </li>
+      <% else %>
+        <li role="presentation"><%= link_to "Login", login_path, class: 'btn btn-default btn-sm' %></li>
+      <% end %>
+    </ul>
+  </nav>
+  <h3 class="text-muted">QSO HAM Logbook</h3>
+</div>
