@@ -35,7 +35,7 @@
   </div>
   <div class="col-md-6">
     <div class="form-group">
-      <%= f.label :time_on, "* Time on" %>
+      <%= f.label :time_on, "* Time on (UTC)" %>
       <%= f.text_field :time_on, :class => "form-control timepicker", :value=>"#{f.object.time_on.strftime("%H:%M %p") unless f.object.new_record?}" %>
     </div>
   </div>
@@ -50,7 +50,7 @@
   </div>
   <div class="col-md-6">
     <div class="form-group">
-      <%= f.label :time_off, "* Time off" %>
+      <%= f.label :time_off, "* Time off (UTC)" %>
       <%= f.text_field :time_off, :class => "form-control timepicker", :value=>"#{f.object.time_off.strftime("%H:%M %p") unless f.object.new_record?}" %>
     </div>
   </div>
