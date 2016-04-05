@@ -10,6 +10,14 @@ ready = function() {
     format: 'LT'
   });
 
+  // Tooltip
+  (function( $ ) {
+  	'use strict';
+  	if ( $.isFunction( $.fn['tooltip'] ) ) {
+  		$( '[data-toggle=tooltip],[rel=tooltip]' ).tooltip({ container: 'body' });
+  	}
+  }).apply( this, [ jQuery ]);
+
 };
 
 $(document).ready(ready);

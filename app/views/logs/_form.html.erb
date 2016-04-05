@@ -30,7 +30,7 @@
   <div class="col-md-6">
     <div class="form-group">
       <%= f.label :date_on, "Date on" %>
-      <%= f.text_field :date_on, :class => "form-control datepicker" %>
+      <%= f.text_field :date_on, :class => "form-control datepicker", :value=>"#{f.object.date_on.strftime("%d-%m-%YYYY") unless f.object.new_record?}" %>
     </div>
   </div>
   <div class="col-md-6">
@@ -45,7 +45,7 @@
   <div class="col-md-6">
     <div class="form-group">
       <%= f.label :date_off, "Date off" %>
-      <%= f.text_field :date_off, :class => "form-control datepicker" %>
+      <%= f.text_field :date_off, :class => "form-control datepicker", :value=>"#{f.object.date_off.strftime("%d-%m-%YYYY") unless f.object.new_record?}" %>
     </div>
   </div>
   <div class="col-md-6">

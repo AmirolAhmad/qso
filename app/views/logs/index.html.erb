@@ -28,7 +28,19 @@
       <td><%= log.his_rst %></td>
       <td><%= log.my_rst %></td>
       <td><%= log.country.titleize %></td>
-      <td><%= link_to "details", "#", class: "btn btn-link btn-xs" %></td>
+      <td>
+        <div class="btn-group btn-group-xs btn-group-justified">
+          <%= link_to log_path(log), class: "btn btn-primary", "data-toggle" => "tooltip", "data-placement" => "top", title: "Click to view" do %>
+            <span class="glyphicon glyphicon-info-sign"></span>
+          <% end %>
+          <%= link_to edit_log_path(log), class: "btn btn-warning", "data-toggle" => "tooltip", "data-placement" => "top", title: "Click to edit" do %>
+            <span class="glyphicon glyphicon-pencil"></span>
+          <% end %>
+          <%= link_to log_url(log), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger", "data-toggle" => "tooltip", "data-placement" => "top", title: "Click to delete" do %>
+            <span class="glyphicon glyphicon-trash"></span>
+          <% end %>
+        </div>
+      </td>
     </tr>
     <% end %>
   </tbody>

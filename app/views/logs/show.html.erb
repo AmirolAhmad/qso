@@ -1,0 +1,136 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          QSO with <%= @log.callsign.upcase %>
+          <div class="pull-right">
+            <%= link_to "Back", :back, class: "btn btn-xs btn-default" %>
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Callsign</label>
+                <p><%= @log.callsign.upcase %></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Operator Name</label>
+                <p><%= @log.operator_name %></p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Date On</label>
+                <p><%= @log.date_on.strftime("%A, %d %B %Y") %></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Time On</label>
+                <p><%= @log.time_on.strftime("%Z %H:%M %p (%z)") %></<p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Date Off</label>
+                <p><%= @log.date_off.strftime("%A, %d %B %Y") %></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Time Off</label>
+                <p><%= @log.time_off.strftime("%Z %H:%M %p (%z)") %></p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Frequency</label>
+                <p><%= @log.frequency %> MHz</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Mode</label>
+                <p><%= @log.mode.upcase %></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>TX Power</label>
+                <p><%= @log.power %> Watt</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>His/Her RST</label>
+                <p><%= @log.his_rst %></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>My RST</label>
+                <p><%= @log.my_rst %></p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>QTH</label>
+                <p><%= @log.qth.titleize %></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>State</label>
+                <p><%= @log.state.titleize %></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Country</label>
+                <p><%= @log.country.titleize %></p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-12">
+              <label>Notes</label>
+              <p><%= @log.notes.blank? ? "N/A" : @log.notes %></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
