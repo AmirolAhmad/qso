@@ -54,6 +54,7 @@
               <div class="form-group">
                 <label>Time Off</label>
                 <p><%= @log.time_off.strftime("%Z %H:%M %p (%z)") %></p>
+                <p><%= @log.time_on.in_time_zone.strftime("%Z %H:%M %p (%z)") %></p>
               </div>
             </div>
           </div>
