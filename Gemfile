@@ -15,6 +15,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'config'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
 
 group :development, :test do
   gem 'byebug'
