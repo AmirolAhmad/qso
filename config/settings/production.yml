@@ -1,4 +1,1 @@
-sendgrid:
-  address: smtp.sendgrid.net
-  username: qso_logbook
-  password: P8sEBg8LfeezYG
+host: qso-logbook.herokuapp.com

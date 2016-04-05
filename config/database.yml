@@ -10,10 +10,3 @@ development:
 test:
   <<: *default
   database: qso_test
-
-production:
-  <<: *default
-  host: <%= ENV['RDS_HOST'] %>
-  database: <%= ENV['RDS_DATABASE'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>

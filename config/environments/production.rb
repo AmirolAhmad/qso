@@ -81,11 +81,11 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: Settings.site_domain }
   config.action_mailer.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
-    :address        => Settings.sendgrid.address,
+    :address        => "smtp.sendgrid.net",
     :port           => 587,
     :authentication => :plain,
-    :user_name      => Settings.sendgrid.username,
-    :password       => Settings.sendgrid.password,
+    :user_name      => "#{ENV['SENDGRID_USERNAME']}",
+    :password       => "#{ENV['SENDGRID_PASSWORD']}",
     :enable_starttls_auto => true
   }
 end
