@@ -21,4 +21,5 @@ Rails.application.routes.draw do
   end
 
   get "/dashboard" => 'dashboards#index'
+  resources :logs
 end

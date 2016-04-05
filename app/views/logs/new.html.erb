@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Log New QSO</div>
+        <div class="panel-body">
+          <%= form_for @log, multipart: true, html: { class: "form-bordered", method: :post } do |f| %>
+            <%= render partial: 'form', locals: {f: f, post: @log} %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

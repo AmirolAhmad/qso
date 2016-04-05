@@ -1,0 +1,124 @@
+<% if @log.errors.any? %>
+<div class="alert alert-danger alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong><%= pluralize(@log.errors.count, "error") %> prohibited
+    this user from being saved:</strong>
+    <ul>
+      <% @log.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+</div>
+<% end %>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :callsign, "Callsign" %>
+      <%= f.text_field :callsign, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :operator_name, "Operator Name" %>
+      <%= f.text_field :operator_name, :class => "form-control" %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :date_on, "Date on" %>
+      <%= f.text_field :date_on, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :time_on, "Time on" %>
+      <%= f.text_field :time_on, :class => "form-control" %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :date_off, "Date off" %>
+      <%= f.text_field :date_off, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :time_off, "Time off" %>
+      <%= f.text_field :time_off, :class => "form-control" %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= f.label :frequency, "Frequency (MHz)" %>
+      <%= f.text_field :frequency, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= f.label :mode, "Mode" %>
+      <%= f.text_field :mode, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= f.label :power, "TX Power (Watt)" %>
+      <%= f.text_field :power, :class => "form-control" %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :his_rst, "His/Her RST" %>
+      <%= f.text_field :his_rst, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :my_rst, "My RST" %>
+      <%= f.text_field :my_rst, :class => "form-control" %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= f.label :qth, "QTH" %>
+      <%= f.text_field :qth, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= f.label :state, "State" %>
+      <%= f.text_field :state, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= f.label :country, "Country" %>
+      <%= f.text_field :country, :class => "form-control" %>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :notes, "Notes" %>
+  <%= f.text_area :notes, :class => "form-control", rows: 4 %>
+</div>
+
+<div class="panel panel-footer">
+  <%= f.button "Save", :class => "btn btn-primary", data: { disable_with: "<i class='fa fa-spinner fa-spin'></i> Saving..." } %>
+  <%= link_to 'Cancel', logs_path, :class => "btn btn-link" %>
+</div>
