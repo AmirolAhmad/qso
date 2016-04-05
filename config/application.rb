@@ -18,7 +18,7 @@ Bundler.require(*Rails.groups)
 module Qso
   class Application < Rails::Application
     config.autoload_paths += %W(#{config.root}/lib)
-    config.time_zone = 'Asia/Kuala_Lumpur'
+    # config.time_zone = 'Asia/Kuala_Lumpur'
     config.active_record.default_timezone = :local
     config.active_record.time_zone_aware_attributes = false
     config.encoding = "utf-8"
