@@ -38,6 +38,7 @@
               <div class="form-group">
                 <label>Time On</label>
                 <p><%= @log.time_on.strftime("%Z %H:%M %p (%z)") %></<p>
+                <p><%= Time.zone.now.strftime("%Z %H:%M %p (%z)") %></p>
               </div>
             </div>
           </div>
