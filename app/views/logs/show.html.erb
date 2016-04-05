@@ -14,7 +14,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label>Callsign</label>
-                <p><%= @log.callsign.upcase %></p>
+                <p><%= @log.callsign.upcase %> <%= link_to "view at qrz.com", "https://www.qrz.com/db/#{@log.callsign.upcase}", class: "btn btn-link btn-xs", target: "_blank" %></p>
               </div>
             </div>
             <div class="col-md-6">
@@ -103,13 +103,13 @@
             <div class="col-md-4">
               <div class="form-group">
                 <label>QTH</label>
-                <p><%= @log.qth.titleize %></p>
+                <p><%= @log.qth.blank? ? "N/A" : @log.qth.titleize %></p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
                 <label>State</label>
-                <p><%= @log.state.titleize %></p>
+                <p><%= @log.state.blank? ? "N/A" : @log.state.titleize %></p>
               </div>
             </div>
             <div class="col-md-4">
